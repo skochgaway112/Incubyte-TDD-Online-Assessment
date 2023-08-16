@@ -17,12 +17,13 @@ int main(){
      vector<char>commands;
      commands={'f','r','u','b','l'};
       
-  Given{
-    initial position and direction is (0,0,0) and N
-    if(command is f or b)- The spacecraft would move one step forward and backward depending on the current direction 
-    if(command is l or r)- the spacecraft will turn 90 degrees to left or right, changing the direction
-    if(command is u or d)- the spacecraft will again turn the direction rotating upwards or downwards 
-  }
+       
+      Given{
+        initial direction as N and coordinates as (0,0,0);
+        if f or b command- then (0,1,0) or (0,-1,0) and the direction remains same 
+        if l or r command - then the direction will change only 
+        if u or d command - then the direction will change only
+      }
 
     return 0;
 }
