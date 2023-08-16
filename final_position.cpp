@@ -1,26 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+int main(){ 
+   int x_direction;
+   cin>>x_direction;
 
+   int y_direction;
+   cin>>y_direction;
 
-int main(){
- 
-     
-   int initial_direction_x;
-   cin>>initial_direction_x;
-
-
-
-   int initial_direction_y;
-   cin>>initial_direction_y;
-
-   int initial_direction_z;
-   cin>>initial_direction_z;
-
-   //show the input taken(for verification)
-
-   cout<<initial_direction_x<<" "<<initial_direction_y<<" "<<initial_direction_z<<endl;
-
+   int z_direction;
+   cin>>z_direction;
+   
+   //Test-2
+  Given{
+    A vector with the list of commands;
+    vector<char>commands={"f","r","u","b","l"};
+  }   
 
 
     return 0;
