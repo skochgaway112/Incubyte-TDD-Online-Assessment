@@ -1,21 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void no_change_in_direction(){
-
+void no_change_in_direction(int x_direction, int y_direction, int z_direction){
+  here only the indexes will be incremented or decremented 
 }
 
 
-void change_in_direction_only(){
-
+void change_in_direction_only(char initial_direction){
+  here the direction will change with no increment or decrement
 }
 
 void directions(vector<char>&commands,int x_direction, int y_direction , int z_direction, char initial_direction){
     for(int i=0;i<commands.size();i++){
          if(commands[i]=='f' || commands[i]=='b'){
-            no_change_in_direction();
+            no_change_in_direction(x_direction,y_direction,z_direction);
          }else{
-            change_in_direction_only();
+            change_in_direction_only(inital_direction);
          }
     }
 }     
