@@ -14,23 +14,23 @@ void change_in_direction_only(char &initial_direction,char command){
   //here the direction will change with no increment or decrement
   if(command=='r'){
    if(initial_direction=='N'){
-    intial_direction='E';
-   }else if(initial_direction=='E'){
-    intial_direction='S';
+    initial_direction='E';
+//    }else if(initial_direction=='E'){ 
+    initial_direction='S';
    }else if(initial_direction=='S'){
-    intial_direction='W';
+    initial_direction='W'; 
    }else if(initial_direction=='W'){
     initial_direction='N';
    }
   }
-} 
+}     
 
 void directions(vector<char>&commands,int x_direction, int y_direction , int z_direction, char initial_direction){
     for(int i=0;i<commands.size();i++){
          if(commands[i]=='f' || commands[i]=='b'){
             no_change_in_direction(x_direction,y_direction,z_direction,commands[i], initial_direction);
          }else{
-            change_in_direction_only(inital_direction,command[i]);
+            change_in_direction_only(initial_direction,commands[i]);
          }
     }
 }     
