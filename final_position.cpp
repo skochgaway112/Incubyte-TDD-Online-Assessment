@@ -1,6 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
-     
+
+void no_change_in_direction(){
+
+}
+
+
+void change_in_direction_only(){
+
+}
+
+void directions(vector<char>&commands,int x_direction, int y_direction , int z_direction, char initial_direction){
+    for(int i=0;i<commands.size();i++){
+         if(commands[i]=='f' || commands[i]=='b'){
+            no_change_in_direction();
+         }else{
+            change_in_direction_only();
+         }
+    }
+}     
 
 int main(){ 
   int x_direction;
@@ -17,13 +35,9 @@ int main(){
      vector<char>commands;
      commands={'f','r','u','b','l'};
       
-       
-      Given{
-        initial direction as N and coordinates as (0,0,0);
-        if f or b command- then (0,1,0) or (0,-1,0) and the direction remains same 
-        if l or r command - then the direction will change only 
-        if u or d command - then the direction will change only
-      }
+      directions(commands,0,0,0,N);
+
+      
 
     return 0;
 }
