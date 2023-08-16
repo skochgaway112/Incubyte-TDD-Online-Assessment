@@ -1,8 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+     
 
 int main(){ 
-   int x_direction;
+  int x_direction;
    cin>>x_direction;
 
    int y_direction;
@@ -10,13 +11,12 @@ int main(){
 
    int z_direction;
    cin>>z_direction;
-   
-   //Test-2
-  Given{
-    A vector with the list of commands;
-    vector<char>commands={"f","r","u","b","l"};
-  }   
 
+   char intial_direction ='N';
+   
+
+  
+  
 
     return 0;
 }
