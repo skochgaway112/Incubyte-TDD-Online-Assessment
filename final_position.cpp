@@ -14,8 +14,9 @@ int main(){
 
    char intial_direction ='N';
    
-
-  
+     vector<char>commands;
+     commands={'f','r','u','b','l'};
+      
   
 
     return 0;
