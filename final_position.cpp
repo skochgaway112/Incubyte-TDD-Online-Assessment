@@ -10,11 +10,18 @@ void no_change_in_direction(int x_direction, int y_direction, int z_direction,ch
 }
 
 
-void change_in_direction_only(char initial_direction,char command){
+void change_in_direction_only(char &initial_direction,char command){
   //here the direction will change with no increment or decrement
   if(command=='r'){
-    if the initial direction is north , it will rotate 90 degrees to the right , else if south then again 90 degrees to the right to West
-    and if it is in west then it will move to north and if in east then it will move towards south
+   if(initial_direction=='N'){
+    intial_direction='E';
+   }else if(initial_direction=='E'){
+    intial_direction='S';
+   }else if(initial_direction=='S'){
+    intial_direction='W';
+   }else if(initial_direction=='W'){
+    initial_direction='N';
+   }
   }
 } 
 
